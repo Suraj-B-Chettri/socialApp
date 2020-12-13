@@ -3,3 +3,8 @@ app-home {
   flex-direction: column;
   height: 100%;
 }
+
+#kakao-icon ::after{
+  color:black;
+content: "afaf";
+}

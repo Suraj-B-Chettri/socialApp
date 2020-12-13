@@ -1,7 +1,8 @@
 {
-  "name": "cordova-plugin-kakao-sdk-test-for-ionic4",
-  "version": "0.0.1",
-  "author": "raccoondev85",
+  "name": "ionic-conference-app",
+  "version": "0.0.0",
+  "description": "Kakao Cordova SDK Plugin for Ionic 4",
+  "author": "Ionic Team <hi@ionicframework.com>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -51,6 +52,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cordova-android": "^9.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -63,18 +65,23 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "Kakao Cordova SDK Plugin for Ionic 4",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-kakao-sdk": {
+        "KAKAO_APP_KEY": "2e61aa2a897c747dc7780189bd6194c0"
+      }
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

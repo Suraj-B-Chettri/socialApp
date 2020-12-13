@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.4.kakao.test" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.conferenceapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>KakaoSDKIonic4</name>
     <description>.</description>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://localhost:8101" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -11,7 +11,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="ScrollEnabled" value="false" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="22" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
@@ -100,6 +100,7 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <engine name="ios" spec="~4.5.5" />
     <plugin name="cordova-plugin-kakao-sdk" spec="~3.0.0">
-        <variable name="KAKAO_APP_KEY" value="4f4cd4e8784c29e753fdf2b6b45e63ca" />
+        <variable name="KAKAO_APP_KEY" value="2e61aa2a897c747dc7780189bd6194c0" />
     </plugin>
+    <allow-navigation href="http://localhost:8101" sessionid="8d45fbdf" />
 </widget>
